@@ -1,0 +1,6 @@
+<% if not current_user %>
+    <%=link_to "iniciar sesion", new_user_session_path %>
+<% else %>
+    Welcome <%= current_user.name %>
+<% end %>
+<br>Hola mundo!
